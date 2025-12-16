@@ -1,10 +1,10 @@
-#include <stdio.h>
+shu#include <stdio.h>
 
 int main ()
 {
     //1
     first:
-    printf("¿ªÊ¼Çë°´1£¬ÍË³öÇë°´2\n");
+    printf("å¼€å§‹è¯·æŒ‰1ï¼Œé€€å‡ºè¯·æŒ‰2\n");
     int input_1;
     scanf("%d" , &input_1);
     if (input_1 == 1)
@@ -17,29 +17,30 @@ int main ()
     }
     if (input_1 != 1 && input_1 != 2)
     {
-        printf("ÇëÖØÊÔ\n");
+        printf("è¯·é‡è¯•\n");
         goto first;
     }
     start:
         int day;
-        printf("ÇëÊäÈëÄãµÄÉúÈÕ(Àı£ºÊ®ÔÂÊ®ÈÕÊäÈë1010)£º");
+        printf("è¯·è¾“å…¥ä½ çš„ç”Ÿæ—¥(ä¾‹ï¼šåæœˆåæ—¥è¾“å…¥1010)ï¼š");
         scanf("%d" , &day);
         if (day % 2 == 0)
         {
-            printf("Äã²»ÊÇgay");
+            printf("ä½ ä¸æ˜¯gay");
         }
         else
         {
-            printf("ÄãÊÇgay");
+            printf("ä½ æ˜¯gay");
         }
         int input_2;
-        printf("\nÔÙÀ´Ò»´ÎÊäÈë1£¬½áÊøÊäÈëÈÎÒâÊı×Ö\n");
+        printf("\nå†æ¥ä¸€æ¬¡è¾“å…¥1ï¼Œç»“æŸè¾“å…¥ä»»æ„æ•°å­—\n");
         scanf("%d" , &input_2);
         if (input_2 == 1)
         {
             goto start;
         }
      end:
-         printf("ÓÎÏ·½áÊø");
+         printf("æ¸¸æˆç»“æŸ");
     return 0;
 }
+
